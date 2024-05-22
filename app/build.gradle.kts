@@ -68,6 +68,8 @@ dependencies {
 
     // Local Database
     implementation(libs.androidx.room.runtime)
+    implementation(project(":nfctool"))
+    implementation(project(":nfcemulator"))
     annotationProcessor(libs.androidx.room.compiler)
     ksp(libs.androidx.room.compiler)
 

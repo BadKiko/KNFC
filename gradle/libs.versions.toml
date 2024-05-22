@@ -21,6 +21,7 @@ moshi-kotlin-codegen = "1.15.0"
 retrofit = "2.9.0"
 room-runtime = "2.6.0"
 stories = "1.0.2"
+compose-preview-renderer = "0.0.1-alpha01"
 
 [libraries]
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
@@ -52,6 +53,7 @@ ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview
 ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-preview-renderer = { group = "com.android.tools.compose", name = "compose-preview-renderer", version.ref = "compose-preview-renderer" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

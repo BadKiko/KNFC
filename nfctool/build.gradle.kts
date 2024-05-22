@@ -35,6 +35,7 @@ android {
 dependencies {
 
     implementation(libs.core.ktx)
+    implementation(libs.compose.preview.renderer)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
