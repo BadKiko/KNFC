@@ -14,6 +14,8 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AnonixVpn"
+rootProject.name = "KNFC"
+include(":nfcemulator")
+include(":nfctool")
 include(":app")
  

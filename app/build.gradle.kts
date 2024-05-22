@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.anonixteam.anonixvpn"
+    namespace = "com.kiko.knfc"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.anonixteam.anonixvpn"
+        applicationId = "com.kiko.knfc"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
