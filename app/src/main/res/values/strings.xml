@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AnonixVpn</string>
+    <string name="warning_enable_nfc">Необходимо включить NFC</string>
 </resources>

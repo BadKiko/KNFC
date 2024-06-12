@@ -14,8 +14,8 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "KNFC"
+rootProject.name = "KNFC"/*
 include(":nfcemulator")
-include(":nfctool")
+include(":nfctool")*/
 include(":app")
  

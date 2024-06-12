@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
     kotlin("kapt")
+    kotlin("plugin.serialization") version "2.0.0"
     id("com.google.dagger.hilt.android") version "2.46" apply true
     id("com.google.devtools.ksp") version "1.9.20-1.0.14"
 }
@@ -13,7 +14,7 @@ android {
 
     defaultConfig {
         applicationId = "com.kiko.knfc"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -58,26 +59,21 @@ android {
 
 dependencies {
     //UI
-    implementation(libs.stories)
-    implementation(libs.coil.compose)
-    implementation(libs.skydoves.cloudy)
-
-    // Retrofit
-    implementation(libs.retrofit)
-    implementation(libs.converter.moshi)
+    implementation("com.maxkeppeler.sheets-compose-dialogs:core:1.3.0")
+    implementation("com.maxkeppeler.sheets-compose-dialogs:input:1.3.0")
 
     // Local Database
     implementation(libs.androidx.room.runtime)
-    implementation(project(":nfctool"))
-    implementation(project(":nfcemulator"))
     annotationProcessor(libs.androidx.room.compiler)
     ksp(libs.androidx.room.compiler)
 
     // Navigation
+    implementation(libs.animations.core)
     implementation(libs.destinationCore)
     ksp(libs.destinationKsp)
 
     // Json
+    implementation(libs.kotlinx.serialization.json)
     ksp(libs.moshi.kotlin.codegen)
     implementation(libs.moshi)
 

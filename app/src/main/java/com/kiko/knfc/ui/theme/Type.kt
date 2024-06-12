@@ -8,10 +8,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.kiko.knfc.R
 
-private val quantityFamily = FontFamily(
-    Font(R.font.quantify, FontWeight.Normal)
-)
-
 private val monserratFamily = FontFamily(
     Font(R.font.monserrat_bold, FontWeight.Bold),
     Font(R.font.monserrat_semibold, FontWeight.SemiBold),
@@ -45,7 +41,8 @@ val Typography = Typography(
         fontWeight = FontWeight.Medium
     ),
     titleLarge = TextStyle(
-        fontFamily = quantityFamily,
+        fontFamily = monserratFamily,
+        fontWeight = FontWeight.SemiBold,
         fontSize = 24.sp
     )
     /* Other default text styles to override
